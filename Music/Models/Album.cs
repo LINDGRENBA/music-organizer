@@ -10,7 +10,7 @@ namespace MusicOrganizer.Models
 
     public Album(string name)
     {
-      Name = "";
+      Name = name;
       _albumList.Add(this);
       Id = _albumList.Count;
     }
