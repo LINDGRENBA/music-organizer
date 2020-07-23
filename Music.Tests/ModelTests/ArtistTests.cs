@@ -60,7 +60,7 @@ namespace MusicOrganizer.Tests
       string name2 = "Mountain Goats";
       Artist newArtist1 = new Artist(name1);
       Artist newArtist2 = new Artist(name2);
-      Artist result = Artist.Find(2);
+      Artist result = Artist.Find(1);
       Assert.AreEqual(newArtist1, result);
     }
 
