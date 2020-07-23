@@ -14,5 +14,15 @@ namespace MusicOrganizer.Tests
       Artist newArtist = new Artist("Taylor Swift");
       Assert.AreEqual(typeof(Artist), newArtist.GetType());
     }
+
+    [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      string name = "Taylor Swift";
+      Artist newArtist = new Artist(name);
+
+      string result = newArtist.Name;
+      Assert.AreEqual(name, result);
+    }
   }
 }
