@@ -52,5 +52,17 @@ namespace MusicOrganizer.Tests
 
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectArtistObject_Artist()
+    {
+      string name1 = "Taylor Swift";
+      string name2 = "Mountain Goats";
+      Artist newArtist1 = new Artist(name1);
+      Artist newArtist2 = new Artist(name2);
+      Artist result = Artist.Find(2);
+      Assert.AreEqual(newArtist1, result);
+    }
+
   }
 }
