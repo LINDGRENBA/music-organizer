@@ -1,11 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MusicOrganizer.Models;
+using System;
 
 namespace MusicOrganizer.Tests
 {
   [TestClass]
-  public class AlbumTests
+  public class AlbumTests : IDisposable
   {
+
+    public void Dispose()
+    {
+      Album.ClearAll();
+    }
+
     [TestMethod]
     public void AlbumConstructor_CreatesInstanceOfAlbum_Album()
     {

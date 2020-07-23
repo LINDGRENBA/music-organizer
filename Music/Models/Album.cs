@@ -12,8 +12,12 @@ namespace MusicOrganizer.Models
     {
       Name = name;
       _albumList.Add(this);
-      Id = 2;
-      // _albumList.Count;
+      Id = _albumList.Count;
+    }
+
+    public static void ClearAll()
+    {
+      _albumList.Clear();
     }
   }
 }
