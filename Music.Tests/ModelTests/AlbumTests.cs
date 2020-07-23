@@ -24,17 +24,17 @@ namespace MusicOrganizer.Tests
     [TestMethod]
     public void GetName_ReturnsName_String()
     {
-      string name = "Red";
-      Album ourAlbum = new Album(name);
-      string result = ourAlbum.Name;
-      Assert.AreEqual(name, result);
+      string title = "Red";
+      Album ourAlbum = new Album(title);
+      string result = ourAlbum.Title;
+      Assert.AreEqual(title, result);
     }
 
     [TestMethod]
     public void GetId_ReturnsId_Int()
     {
-      string name = "Red";
-      Album ourAlbum = new Album(name);
+      string title = "Red";
+      Album ourAlbum = new Album(title);
       int result = ourAlbum.Id;
       Assert.AreEqual(1, result);
     }
@@ -50,8 +50,8 @@ namespace MusicOrganizer.Tests
     [TestMethod]
     public void Find_ReturnsCorrectsAlbum_Album()
     {
-      Album albumOne = new Album("name1");
-      Album albumTwo = new Album("name2");
+      Album albumOne = new Album("title1");
+      Album albumTwo = new Album("title2");
       Album result = Album.Find(2);
       Assert.AreEqual(albumTwo , result);
     }

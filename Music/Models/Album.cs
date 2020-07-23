@@ -4,13 +4,13 @@ namespace MusicOrganizer.Models
 {
   public class Album
   {
-    public string Name { get; }
+    public string Title { get; }
     public int Id { get; }
     private static List<Album> _albumList = new List<Album> {};
 
-    public Album(string name)
+    public Album(string title)
     {
-      Name = name;
+      Title = title;
       _albumList.Add(this);
       Id = _albumList.Count;
     }
