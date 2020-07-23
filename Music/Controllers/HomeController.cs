@@ -5,6 +5,10 @@ namespace MusicOrganizer.Controllers
 {
   public class HomeController : Controller
   {
-    //Routes go here
+    [HttpGet("/")]
+    public ActionResult Index()
+    {
+      return View();
+    }
   }
 }
