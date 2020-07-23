@@ -21,5 +21,14 @@ namespace MusicOrganizer.Tests
       string result = ourAlbum.Name;
       Assert.AreEqual(name, result);
     }
+
+    [TestMethod]
+    public void GetId_ReturnsId_Int()
+    {
+      string name = "Red";
+      Album ourAlbum = new Album(name);
+      int result = ourAlbum.Id;
+      Assert.AreEqual(1, result);
+    }
   }
 }
