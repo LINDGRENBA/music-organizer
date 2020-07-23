@@ -14,7 +14,7 @@ _Catalog and organize your music collection by artist_
 
 | Behavior   |   Input   |  Output |  Met? (Y/N)  |
 |----------|:-------------:|------:|-----------:|
-|  Program should create an `Album` object with property `albumName` and an Id  |  Red  |  Album newAlbum = new Album() {AlbumName = Red, Id = 1}  |  N  |
+|  Program should create an `Album` object with property `albumName` and an Id  |  Red  |  Album newAlbum = new Album() {AlbumName = Red, Id = 1}  |  Y  |
 |  Program should create an `Artist` object with property  `artistName` and an Id  |  Taylor Swift  |  Artist artist1 = new Artist() {ArtistName = Taylor Swift, Id = 1} |  N  |
 |  Program should add an `Artist` object to an `Album` object  |  add Red to Taylor Swift  |  Taylor Swift {AlbumName = Red}  |  N  |
 

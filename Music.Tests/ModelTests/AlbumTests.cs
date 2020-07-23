@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MusicOrganizer.Models;
 using System;
+using System.Collections.Generic;
 
 namespace MusicOrganizer.Tests
 {
@@ -36,6 +37,14 @@ namespace MusicOrganizer.Tests
       Album ourAlbum = new Album(name);
       int result = ourAlbum.Id;
       Assert.AreEqual(1, result);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyAlbumList_AlbumList()
+    {
+    List<Album> newList = new List<Album> { };
+    List<Album> result = Album.GetAll();
+    CollectionAssert.AreEqual(newList, result);
     }
   }
 }

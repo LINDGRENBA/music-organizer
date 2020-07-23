@@ -19,5 +19,11 @@ namespace MusicOrganizer.Models
     {
       _albumList.Clear();
     }
+
+    public static List<Album> GetAll()
+    {
+      List<Album> allAlbums = new List<Album> {new Album("Reputation") };
+      return allAlbums;
+    }
   }
 }
