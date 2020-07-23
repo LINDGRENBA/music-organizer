@@ -64,5 +64,17 @@ namespace MusicOrganizer.Tests
       Assert.AreEqual(newArtist1, result);
     }
 
+    [TestMethod]
+    public void AddAlbum_AddsAlbumtToArtistList_ArtistList()
+    {
+      string title1 = "Reputation";
+      Album newAlbum = new Album(title1);
+      List<Album> newList = new List<Album> { newAlbum };
+      string name1 = "Taylor Swift";
+      Artist newArtist = new Artist(name1);
+      newArtist.AddAlbum(newAlbum);
+      List<Album> result = newArtist.Albums;
+      CollectionAssert.AreEqual(newList, result);  
+    }
   }
 }

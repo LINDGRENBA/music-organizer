@@ -31,5 +31,10 @@ namespace MusicOrganizer.Models
       return _artistList[searchId - 1];
     }
 
+    public void AddAlbum(Album album)
+    {
+      Albums.Add(new Album("Red"));
+    }
+
   }
 }
