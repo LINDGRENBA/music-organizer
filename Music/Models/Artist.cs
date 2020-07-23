@@ -24,7 +24,7 @@ namespace MusicOrganizer.Models
 
     public static List<Artist> GetAll()
     {
-      return new List<Artist>{};
+      return _artistList;
     }
   }
 }
