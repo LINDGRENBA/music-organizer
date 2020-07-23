@@ -12,5 +12,14 @@ namespace MusicOrganizer.Tests
       Album ourAlbum = new Album("Red");
       Assert.AreEqual(typeof(Album), ourAlbum.GetType());
     }
+
+    [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      string name = "Red";
+      Album ourAlbum = new Album(name);
+      string result = ourAlbum.Name;
+      Assert.AreEqual(name, result);
+    }
   }
 }
