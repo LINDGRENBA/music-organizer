@@ -11,7 +11,7 @@ namespace MusicOrganizer.Models
 
     public Artist(string name)
     {
-      Name = "";
+      Name = name;
       _artistList.Add(this);
       Id = _artistList.Count;
       Albums = new List<Album> {};
