@@ -33,7 +33,7 @@ namespace MusicOrganizer.Models
 
     public void AddAlbum(Album album)
     {
-      Albums.Add(new Album("Red"));
+      Albums.Add(album);
     }
 
   }
