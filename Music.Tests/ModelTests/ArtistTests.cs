@@ -38,5 +38,19 @@ namespace MusicOrganizer.Tests
       int result = newArtist.Id;
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsAllArtistObjects_ArtistList()
+    {
+      string name1 = "Taylor Swift";
+      string name2 = "Mountain Goats";
+      Artist newArtist1 = new Artist(name1);
+      Artist newArtist2 = new Artist(name2);
+      List<Artist> newList = new List<Artist> {newArtist1, newArtist2};
+
+      List<Artist> result = Artist.GetAll();
+
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
