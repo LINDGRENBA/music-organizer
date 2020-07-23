@@ -24,5 +24,11 @@ namespace MusicOrganizer.Models
     {
       return _albumList;
     }
+
+    public static Album Find(int searchId)
+    {
+      Album albumOne = new Album("name1");
+      return albumOne;
+    }
   }
 }

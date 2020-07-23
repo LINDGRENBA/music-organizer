@@ -46,5 +46,16 @@ namespace MusicOrganizer.Tests
     List<Album> result = Album.GetAll();
     CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectsAlbum_Album()
+    {
+      Album albumOne = new Album("name1");
+      Album albumTwo = new Album("name2");
+      Album result = Album.Find(2);
+      Assert.AreEqual(albumTwo , result);
+    }
+      
+
   }
 }
