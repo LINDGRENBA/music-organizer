@@ -13,7 +13,8 @@ namespace MusicOrganizer.Models
     {
       Name = name;
       _artistList.Add(this);
-      Id = _artistList.Count;
+      Id = 0; 
+      //_artistList.Count;
       Albums = new List<Album> {};
     }
   }
